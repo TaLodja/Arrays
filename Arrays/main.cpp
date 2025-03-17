@@ -1,20 +1,20 @@
-#include <iostream>
+п»ї#include <iostream>
 using namespace std;
 
 void main()
 {
 	setlocale(LC_ALL, "");
-	const int SIZE = 5; // размер массива
+	const int SIZE = 5; // СЂР°Р·РјРµСЂ РјР°СЃСЃРёРІР°
 	double arr[SIZE];
 	for (int i = 0; i < SIZE; i++)
 	{
-		cout << "Введите " << i << "-й элемент массива: "; cin >> arr[i];
+		cout << "Р’РІРµРґРёС‚Рµ " << i << "-Р№ СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР°: "; cin >> arr[i];
 	}
 	cout << endl;
 	double sum = 0;
 	double MIN = arr[0];
 	double MAX = arr[0];
-	cout << "Массив в прямом порядке" << endl;
+	cout << "РњР°СЃСЃРёРІ РІ РїСЂСЏРјРѕРј РїРѕСЂСЏРґРєРµ" << endl;
 	for (int i = 0; i < SIZE; i++)
 	{
 		cout << arr[i] << "\t";
@@ -23,11 +23,11 @@ void main()
 		if (arr[i] > MAX) MAX = arr[i];
 	}
 	cout << endl;
-	cout << "Массив в обратном порядке" << endl;
+	cout << "РњР°СЃСЃРёРІ РІ РѕР±СЂР°С‚РЅРѕРј РїРѕСЂСЏРґРєРµ" << endl;
 	for (int i = SIZE - 1; i >= 0; i--) cout << arr[i] << "\t";
 	cout << endl;
-	cout << "Сумма элементов масива: " << sum << endl;
-	cout << "Cреднее арифметическое элементов массива: " << sum / SIZE << endl;
-	cout << "Минимвльное значение в массиве: " << MIN << endl;
-	cout << "Максимальное значение в массиве: " << MAX << endl;
+	cout << "РЎСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃРёРІР°: " << sum << endl;
+	cout << "CСЂРµРґРЅРµРµ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°: " << sum / SIZE << endl;
+	cout << "РњРёРЅРёРјРІР»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РІ РјР°СЃСЃРёРІРµ: " << MIN << endl;
+	cout << "РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РІ РјР°СЃСЃРёРІРµ: " << MAX << endl;
 }
